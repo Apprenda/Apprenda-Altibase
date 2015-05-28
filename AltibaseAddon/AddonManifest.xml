@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<addonManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://schemas.apprenda.com/AddonManifest"
+			   xsi:schemaLocation="http://schemas.apprenda.com/AddonManifest http://apprenda.com/schemas/platform/5.0/AddonManifest.xsd"
+               name="Altibase"
+               description="Altibase provides in-memory and hybrid database solutions which increase performance at a fraction of the cost of traditional enterprise datbases."
+               deploymentNotes="This addon provides Database Schema as a Service (DSaaS), as its architecture is similar to Oracle's."
+               developerHelp="Specify the schema name you wish to create. Apprenda will create the schema and then provide your applicaiton with a connection string to use."
+               vendor="Apprenda"
+               author="Chris Dutra"
+               version="1.0"
+               provisioningUsername=""
+               provisioningPassword=""
+               provisioningLocation=""
+               manifestVersion="2">
+  <properties>
+    <property key="AltibaseHost" description="The FQDN of the Altibase Host" displayName="Altibase Hostname" value="" />
+    <property key="AltibasePort" description="The desired port to connect to Altibase with." displayName="Altibase Port" value="20300"/>
+    <property key="AltibaseUsername" displayName="Administrator Username" description="The administrator username, an account with power-user privileges." value="Administrator"/>
+    <property key="AltibasePassword" displayName="Administrator Password" description="The administrator password" value="Apprenda2014!" />
+  </properties>
+  <parameters allowUserDefinedParameters="false">
+    <parameter key="SchemaName" displayName="Altibase Schema Name" description="The name of the schema you wish to create."/>
+  </parameters>
+</addonManifest>
